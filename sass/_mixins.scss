@@ -1,0 +1,16 @@
+@mixin focusEvent($bgcolor,$bdcolor) {
+    transition: all 300ms linear;
+    &:focus{
+        background-color: $bgcolor;
+        border: 2px $bdcolor solid;
+    }
+}
+
+@mixin cardFocus() {
+    transition: all 300ms linear;
+    &:hover{
+        border-top: 5px solid $yellow-active;
+        transform: scale(1.05); 
+        z-index: 1;
+    }
+}

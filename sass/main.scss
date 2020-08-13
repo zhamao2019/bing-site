@@ -1,0 +1,16 @@
+@import "./variables";
+@import "./mixins";
+@import "./header";
+@import "./nav";
+@import "./mainbody";
+@import "./card";
+@import "./form";
+@import "./footer";
+
+h1,h2,h3,h4,h5{
+    font-family: $headerFont;
+}
+*{
+    font-family: $bodyFont;
+}
+

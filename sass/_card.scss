@@ -1,0 +1,36 @@
+i{
+    &.fab{
+        color: $yellow-active;
+        font-size: 5rem;
+        text-align: center;
+        padding: 10px;
+        // background-color: $bg-dark;
+    }
+    &.fas{
+        color: $yellow-active;
+        font-size: 5rem;
+        text-align: center;
+        padding: 10px;
+        // background-color: $bg-dark;
+    }
+}
+
+
+div.card{
+    @include cardFocus();
+    margin-bottom: 2rem;
+    h5.card-title{
+        text-align: center;
+        &:hover{
+            color: $yellow-active;
+        }
+    }
+
+    p.card-text{
+        color: $bg-second;
+        text-align: center;
+    }
+
+   
+}
+
