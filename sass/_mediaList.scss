@@ -1,0 +1,36 @@
+.media {
+    li{
+        padding-left: 0;
+    }
+    
+    h5{
+        font-size: 1rem;
+    }
+
+    i{
+        &.fab{
+            color: $yellow-active;
+            font-size: 3rem;
+            text-align: center;
+            margin-right: 1rem;
+            // background-color: $bg-dark;
+        }
+        &.fas{
+            color: $yellow-active;
+            font-size: 3rem;
+            text-align: center;
+            margin-right: 1rem;
+            // background-color: $bg-dark;
+        }
+    }
+
+    p{
+        color: $text-muted;
+        // margin-bottom: 0;
+        margin-top: 1rem;
+    }
+    
+    .progress-bar{
+        background: $yellow-active;
+    }
+}

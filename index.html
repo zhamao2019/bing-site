@@ -12,11 +12,14 @@
 <body>
     <header>
         <!-- navbar area -->
-        <nav class="navbar navbar-dark bg-dark fixed-top">
-            <a class="navbar-brand text-light" href="#">Bing</a>
+        <nav id="navbar" class="navbar navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand text-light" href="#">Bing Y</a>
             <ul class="nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="./index.html">Home</a>
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#education">Education</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./portfolio.html">Portfolio</a>
@@ -41,194 +44,157 @@
             </div>
         </div>
     </header>
+    <!-- header background area container end -->
 
     <main class="container">
-        <h2 class="display-5">SKILLS</h2>
-        <hr class="my-5">
+      <div data-spy="scroll" data-target="#navbar" data-offset="0">
+      
+        <!-- skills section -->
+        <div class="skills">
+          <h2 id="skills" class="display-5">SKILLS</h2>
         
-        <!-- cards list -->
-        <div class="card border-light p-3 shadow-sm">
-            <div class="row no-gutters">
-              <div class="col-md-2 d-flex justify-content-center align-items-center">
-                  <i class="fab fa-html5"></i>
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title text-md-left">HTML</h5>
-                  <p class="card-text text-md-left">Proficient in HTML skill and associate with Bootstrap framework to build a responsive website.</p>
+          <ul class="list-unstyled d-flex flex-wrap justify-content-start align-items-stretch">
+            <!-- HTML section -->
+            <li class="media col-md-6 mb-3">
+              <i class="fab fa-html5"></i>
+              <div class="media-body">
+                <h5>HTML + CSS + SASS</h5>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
                 </div>
+                <p>Excellent in HTML + CSS skill and associate with Sass style sheets</p>
               </div>
-            </div>
-        </div>
-        
-        <div class="card border-light p-3 shadow-sm">
-            <div class="row no-gutters">
-              <div class="col-md-2 d-flex justify-content-center align-items-center">
-                  <i class="fab fa-css3-alt"></i>
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title text-md-left">CSS</h5>
-                  <p class="card-text text-md-left">Proficient in CSS skill and associate with Sass style sheets.</p>
+            </li>
+            <!-- HTML section end -->
+            <!-- Js section -->
+            <li class="media col-md-6 mb-3">
+              <i class="fab fa-js"></i>
+              <div class="media-body">
+                <h5>JavaScript</h5>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
                 </div>
+                <p>Proficient in JavaScript and jQuery</p>
               </div>
-            </div>
-        </div>
-       
-        <div class="card border-light p-3 shadow-sm">
-            <div class="row no-gutters">
-              <div class="col-md-2 d-flex justify-content-center align-items-center">
-                  <i class="fab fa-python"></i>
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title text-md-left">Python</h5>
-                  <p class="card-text text-md-left">Coding with Python and Flask framework, associate with database. Sometimes use Python on raspberry pi.</p>
+            </li>
+            <!-- Js section end-->
+            <!-- Angular section -->
+            <li class="media col-md-6 mb-3">
+              <i class="fab fa-angular"></i>
+              <div class="media-body">
+                <h5>Angular</h5>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
                 </div>
+                <p>Angular</p>
               </div>
-            </div>
-        </div>
-    
-        <div class="card border-light p-3 shadow-sm">
-            <div class="row no-gutters">
-              <div class="col-md-2 d-flex justify-content-center align-items-center">
-                  <i class="fab fa-js"></i>
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title text-md-left">JavaScript</h5>
-                  <p class="card-text text-md-left">Coding with JavaScript and jQuery.</p>
+            </li>
+            <!-- Angular section end-->
+            <!-- Design section -->
+            <li class="media col-md-6 mb-3">
+              <i class="fab fa-adobe"></i>
+              <div class="media-body">
+                <h5>Graphic and Prototype Design</h5>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
                 </div>
+                <p>Photoshop + Illustrator + Sketch</p>
               </div>
-            </div>
-        </div>
-       
-        <div class="card border-light p-3 shadow-sm">
-            <div class="row no-gutters">
-              <div class="col-md-2 d-flex justify-content-center align-items-center">
-                  <i class="fas fa-database"></i>
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title text-md-left">Database</h5>
-                  <p class="card-text text-md-left">Database Design and using basic SQL query to manipulate database.</p>
+            </li>
+            <!-- Design section end-->
+            <!-- C# section -->
+            <li class="media col-md-6 mb-3">
+              <i class="fas fa-laptop-code"></i>
+              <div class="media-body">
+                <h5>C#</h5>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
                 </div>
+                <p>C#</p>
               </div>
-            </div>
+            </li>
+            <!-- C# section end-->
+            <!-- GitHub section -->
+            <li class="media col-md-6 mb-3">
+              <i class="fab fa-github"></i>
+              <div class="media-body">
+                <h5>GitHub</h5>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                </div>
+                <p>Coding and version management with GitHub</p>
+              </div>
+            </li>
+            <!-- GitHub section end-->
+          </ul>
         </div>
+      <!-- skills section end -->
 
-        <div class="card border-light p-3 shadow-sm">
-            <div class="row no-gutters">
-              <div class="col-md-2 d-flex justify-content-center align-items-center">
-                <i class="fab fa-adobe">
-                </i>
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title text-md-left">Adobe</h5>
-                  <p class="card-text text-md-left">Proficient in graphic design using Photoshop and Illustrator</p>
-                </div>
-              </div>
-            </div>
-        </div>
+      <!-- work experiences section -->
+      <div class="work-experiences">
+        <h2 id="education" class="display-5">WORK EXPERIENCES</h2>
 
-        <div class="card border-light p-3 shadow-sm">
-            <div class="row no-gutters">
-              <div class="col-md-2 d-flex justify-content-center align-items-center">
-                <i class="fab fa-sketch"></i>
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title text-md-left">Sketch</h5>
-                  <p class="card-text text-md-left">Prototype design with Sketch or Axure</p>
-                </div>
-              </div>
-            </div>
+        <div class="row">
+          <div class="col-xl-6 offset-xl-3">
+            <ul class="timeline">
+              <li>
+                <h5>New Web Design</h5>
+                <p class="float-right text-muted">21 March, 2014</p>
+                <p>Company name</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula....</p>
+                <ul class="bullet">
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, dolor!</li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">21 000 Job Seekers</a>
+                <a class="float-right text-muted">4 March, 2014</a>
+                <p>Curabitur purus sem, malesuada eu luctus eget, suscipit sed turpis. Nam pellentesque felis vitae justo accumsan, sed semper nisi sollicitudin...</p>
+              </li>
+              <li>
+                <a href="#">Awesome Employers</a>
+                <a class="float-right text-muted">1 April, 2014</a>
+                <p>Fusce ullamcorper ligula sit amet quam accumsan aliquet. Sed nulla odio, tincidunt vitae nunc vitae, mollis pharetra velit. Sed nec tempor nibh...</p>
+              </li>
+            </ul>
+          </div>
         </div>
+      
+      </div> 
+      <!-- work experiences section end -->
 
-        <div class="card border-light p-3 shadow-sm">
-            <div class="row no-gutters">
-              <div class="col-md-2 d-flex justify-content-center align-items-center">
-                <i class="fab fa-github"></i>
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title text-md-left">GitHub</h5>
-                  <p class="card-text text-md-left">Code and version management with GitHub</p>
-                </div>
-              </div>
+      <!-- education section -->
+      <div class="education">
+        <h2 id="education" class="display-5">EDUCATION</h2>
+
+        <div class="d-flex justify-content-between">
+          <div class="col-md-6 mb-3">
+            <div class="d-flex justify-content-between">
+              <h5>Algonquin College</h5>
+              <p class="text-muted">2019/09 - Current</p>
             </div>
+            <p>Internet Application and Web Development</p>
+          </div>
+  
+          <div class="col-md-6 mb-3">
+            <div class="d-flex justify-content-between">
+              <h5 >Beijing Capital</h5>
+              <p class="text-muted">2010/09 - 2014/07</p>
+            </div>
+            <p>Proficient in JavaScript and jQuery</p>
+          </div>
         </div>
-        <!-- anther card style -->
-        <!-- <div class="row">
-            <div class="col-sm-6 col-md-4">
-                <div class="card border-light">
-                    <i class="fab fa-html5"></i>
-                    <div class="card-body">
-                        <h5 class="card-title">HTML</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-                <div class="card border-light">
-                    <i class="fab fa-css3-alt"></i>
-                    <div class="card-body">
-                        <h5 class="card-title">CSS</h5>
-                        <p class="card-text">With supporting text below as a natural.</p>
-                    </div>
-                </div>
-            </div>    
-            <div class="col-sm-6 col-md-4">
-                <div class="card border-light">
-                    <i class="fab fa-bootstrap"></i>
-                    <div class="card-body">
-                        <h5 class="card-title">Bootstrap</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    </div>
-                </div>
-            </div>    
-            <div class="col-sm-6 col-md-4">
-                <div class="card border-light">
-                    <i class="fab fa-python"></i>
-                    <div class="card-body">
-                        <h5 class="card-title">Python</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-                <div class="card border-light">
-                    <i class="fas fa-database"></i>
-                    <div class="card-body">
-                        <h5 class="card-title">Database</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-                <div class="card border-light">
-                    <i class="fab fa-js"></i>
-                    <div class="card-body">
-                        <h5 class="card-title">JavaScript</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    </div>
-                </div>
-            </div>
-        </div> -->
+      </div>
+      <!-- education section end -->
+
+
+      </div>    
     </main>
 
     <!-- footer area -->
-    <footer class="container-fluid bg-dark justify-content-center text-light">
-        <div class="row justify-content-center">
-            <h3 class="text-center">Personal webset</h3> 
-        </div> 
-        <div class="row justify-content-center mb-5">
-            <p class="text-center">This is Bing's webset, it will be updated continuously.</p>
-        </div>
-        <hr class="my-3 border border-secondary">
-        <div class="row justify-content-center">
-            <p class="text-muted">© 2019-11-29  Design By Bing Yang</p>
+    <footer class="container-fluid bg-dark">
+        <div class="d-flex justify-content-center align-items-center">
+            <p class="text-muted">© Design By Bing Yang</p>
         </div> 
     </footer> 
   

@@ -6,11 +6,15 @@
 @import "./card";
 @import "./form";
 @import "./footer";
+@import "./mediaList";
+@import "./timeline.scss";
 
 h1,h2,h3,h4,h5{
     font-family: $headerFont;
 }
+h2 .container{
+    margin-bottom: 2rem;
+}
 *{
     font-family: $bodyFont;
 }
-
