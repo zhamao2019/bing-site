@@ -14,7 +14,7 @@ ul.timeline:before {
     z-index: 400;
 }
 ul.timeline > li {
-    margin: 20px 0;
+    margin: 1rem 0 2rem;
     padding-left: 20px;
 }
 ul.timeline > li:before {
@@ -30,12 +30,8 @@ ul.timeline > li:before {
     z-index: 400;
 }
 ul.bullet {
-    // list-style: none;
-    // li:before {
-    //     content: '\02022  ';
-    //     color: $bg-dark;
-    // }
     li {
         list-style-type: disc;
+        color: $bg-dark;
     }
 }

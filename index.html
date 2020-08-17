@@ -46,11 +46,11 @@
     </header>
     <!-- header background area container end -->
 
-    <main class="container">
+    <main class="">
       <div data-spy="scroll" data-target="#navbar" data-offset="0">
       
         <!-- skills section -->
-        <div class="skills">
+        <div class="skills container">
           <h2 id="skills" class="display-5">SKILLS</h2>
         
           <ul class="list-unstyled d-flex flex-wrap justify-content-start align-items-stretch">
@@ -130,31 +130,59 @@
         </div>
       <!-- skills section end -->
 
+      <!-- education section -->
+      <div class="container-fluid bg-light pt-5 pb-5">
+        <div class="education container">
+          <h2 id="education" class="display-5">EDUCATION</h2>
+
+          <div class="row">
+            <div class="col-md-6"> 
+              <h5>Algonquin College</h5>
+              <p class="text-muted">2019/09 - Current</p>
+              <p>Internet Application and Web Development</p>
+            </div>
+
+            <div class="col-md-6">
+              <h5 >Beijing Capital</h5>
+              <p class="text-muted">2010/09 - 2014/07</p>
+              <p>Proficient in JavaScript and jQuery</p>
+            </div>
+          </div>
+        </div>
+        </div>
+      <!-- education section end -->
+
       <!-- work experiences section -->
-      <div class="work-experiences">
+      <div class="work-experiences container mt-5">
         <h2 id="education" class="display-5">WORK EXPERIENCES</h2>
 
         <div class="row">
           <div class="col-xl-6 offset-xl-3">
             <ul class="timeline">
               <li>
-                <h5>New Web Design</h5>
-                <p class="float-right text-muted">21 March, 2014</p>
+                <div class="d-flex w-100 justify-content-between">
+                  <h5>New Web Design</h5>
+                  <p class="text-muted">21 March, 2014</p>
+                </div>
                 <p>Company name</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula....</p>
                 <ul class="bullet">
                   <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, dolor!</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, dolor!</li>
                 </ul>
               </li>
+              
               <li>
-                <a href="#">21 000 Job Seekers</a>
-                <a class="float-right text-muted">4 March, 2014</a>
-                <p>Curabitur purus sem, malesuada eu luctus eget, suscipit sed turpis. Nam pellentesque felis vitae justo accumsan, sed semper nisi sollicitudin...</p>
-              </li>
-              <li>
-                <a href="#">Awesome Employers</a>
-                <a class="float-right text-muted">1 April, 2014</a>
-                <p>Fusce ullamcorper ligula sit amet quam accumsan aliquet. Sed nulla odio, tincidunt vitae nunc vitae, mollis pharetra velit. Sed nec tempor nibh...</p>
+                <div class="d-flex w-100 justify-content-between">
+                  <h5>New Web Design</h5>
+                  <p class="text-muted">21 March, 2014</p>
+                </div>
+                <p>Company name</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula....</p>
+                <ul class="bullet">
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, dolor!</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, dolor!</li>
+                </ul>
               </li>
             </ul>
           </div>
@@ -163,30 +191,188 @@
       </div> 
       <!-- work experiences section end -->
 
-      <!-- education section -->
-      <div class="education">
-        <h2 id="education" class="display-5">EDUCATION</h2>
+      <!-- portfolio section -->
+      <div class="portfolio container mt-5">
+        <h2 class="display-5">MY PORTFOLIO</h2>
 
-        <div class="d-flex justify-content-between">
-          <div class="col-md-6 mb-3">
-            <div class="d-flex justify-content-between">
-              <h5>Algonquin College</h5>
-              <p class="text-muted">2019/09 - Current</p>
+        <!-- tab bar start -->
+        <ul class="nav nav-tabs mb-3" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#Programs" role="tab" aria-controls="Programs" aria-selected="true">Programs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#Interaction" role="tab" aria-controls="Interaction" aria-selected="false">Interaction</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="contact-tab" data-toggle="tab" href="#Graphics" role="tab" aria-controls="Graphics" aria-selected="false">Graphics</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <!-- programs tab start -->
+            <div class="tab-pane fade show active" id="Programs" role="tabpanel" aria-labelledby="Programs-tab">
+                <!-- programs cards list -->
+                <div class="row">
+                    
+                    <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                        <div class="card shadow-sm h-100">
+                            <img src="./img/py-pi2.png" class="card-img-top img-thumbnail img-fluid" alt="bouncing ball">
+                            <div class="card-body">
+                                <h5 class="card-title">Bouncing Ball</h5>
+                                <p class="card-text">Using python to display a bouncing ball on raspberry pi</p>
+                            </div>
+                            <div class="card-footer">
+                                <p class="card-text"><a href="https://github.com/zhamao2019/pythonLab7" class="btn-link">Show Example ></a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                        <div class="card shadow-sm h-100">
+                            <img src="./img/py-pi3.png" class="card-img-top img-thumbnail img-fluid" alt="convert files png">
+                            <div class="card-body">
+                                <h5 class="card-title">Space Ship</h5>
+                                <p class="card-text">A practice that can control a space ship on raspberry pi using python </p>
+                            </div>
+                            <div class="card-footer">
+                                <p class="card-text"><a href="https://github.com/zhamao2019/pythonLab7">Show Example ></a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                        <div class="card shadow-sm h-100">
+                            <img src="./img/py2.png" class="card-img-top img-thumbnail img-fluid" alt="convert files png">
+                            <div class="card-body">
+                                <h5 class="card-title">Convert Files</h5>
+                                <p class="card-text">A practice using python convert .txt to .csv files</p>
+                            </div>
+                            <div class="card-footer">
+                                <p class="card-text"><a href="https://github.com/zhamao2019/PythonLab9">Show Example ></a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                        <div class="card shadow-sm h-100">
+                            <img src="./img/py.png" class="card-img-top img-thumbnail img-fluid" alt="bouncing ball">
+                            <div class="card-body">
+                                <h5 class="card-title">Dictionary Practice</h5>
+                                <p class="card-text">Using python to generate hexadecimal encode to binary dictionary, and display the characters </p>
+                            </div>
+                            <div class="card-footer">
+                                <p class="card-text"><a href="https://github.com/zhamao2019/PythonLab9" class="btn-link">Show Example ></a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                        <div class="card shadow-sm h-100">
+                            <img src="./img/py3.png" class="card-img-top img-thumbnail img-fluid" alt="convert files png">
+                            <div class="card-body">
+                                <h5 class="card-title">Flask Practice</h5>
+                                <p class="card-text">Using flask framework and accessing with database to display students datas </p> 
+                            </div>
+                            <div class="card-footer">
+                                <p class="card-text"><a href="https://github.com/zhamao2019/pythonLab11">Show Example ></a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- cards list end  -->
             </div>
-            <p>Internet Application and Web Development</p>
-          </div>
-  
-          <div class="col-md-6 mb-3">
-            <div class="d-flex justify-content-between">
-              <h5 >Beijing Capital</h5>
-              <p class="text-muted">2010/09 - 2014/07</p>
+            <!-- programs tab end -->
+
+            <!-- Interaction tab start -->
+            <div class="tab-pane fade" id="Interaction" role="tabpanel" aria-labelledby="Interaction-tab">
+                <!-- Interaction cards list -->
+                <div class="row">
+                    <div class="col-sm-6 col-md-4 col-lg-3  mb-3">
+                        <div class="card shadow-sm h-100">
+                            <img src="./img/transition.png" class="card-img-top img-thumbnail img-fluid" alt="transition png">
+                            <div class="card-body">
+                                <h5 class="card-title">Transition Practice</h5>
+                                <p class="card-text">A practice that using transitions with Sass in css</p>
+                            </div>
+                            <div class="card-footer">
+                                <p class="card-text"><a href="https://zhamao2019.github.io/transitions/transitions.html" class="btn-link">Show Example ></a></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                        <div class="card shadow-sm h-100">
+                            <img src="./img/mixins.png" class="card-img-top img-thumbnail img-fluid" alt="mixins png">
+                            <div class="card-body">
+                                <h5 class="card-title">Mixin Practice</h5>
+                                <p class="card-text">A practice that using mixins to show a better experience of forms with Sass in CSS</p>
+                            </div>
+                            <div class="card-footer">
+                                <p class="card-text"><a href="https://zhamao2019.github.io/mixin/index.html">Show Example ></a></p>
+                            </div>
+                        </div>
+                    </div>
+   
+                    <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                        <div class="card shadow-sm h-100">
+                            <img src="./img/py2.png" class="card-img-top img-thumbnail img-fluid" alt="convert files png">
+                            <div class="card-body">
+                                <h5 class="card-title">Convert Files</h5>
+                                <p class="card-text">A practice using python convert .txt to .csv files</p>
+                            </div>
+                            <div class="card-footer">
+                                <p class="card-text"><a href="https://github.com/zhamao2019/PythonLab9">Show Example ></a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                        <div class="card shadow-sm h-100">
+                            <img src="./img/py.png" class="card-img-top img-thumbnail img-fluid" alt="bouncing ball">
+                            <div class="card-body">
+                                <h5 class="card-title">Dictionary Practice</h5>
+                                <p class="card-text">Using python to generate hexadecimal encode to binary dictionary, and display the characters </p>
+                            </div>
+                            <div class="card-footer">
+                                <p class="card-text"><a href="https://github.com/zhamao2019/PythonLab9" class="btn-link">Show Example ></a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <!-- cards list end -->
             </div>
-            <p>Proficient in JavaScript and jQuery</p>
-          </div>
-        </div>
+            <!-- Interaction tab end -->
+
+            <!-- Graphics tab start -->
+            <div class="tab-pane fade" id="Graphics" role="tabpanel" aria-labelledby="Graphics-tab">
+               <!-- Graphics cards list start -->
+                <div class="row">
+                    <div class="col-sm-6 col-md-4 col-lg-3  mb-3">
+                        <div class="card shadow-sm h-100">
+                            <img src="./img/Yang_Bing_mad9010_310_typography-01.png" class="card-img-top img-thumbnail img-fluid" alt="transition png">
+                            <div class="card-body">
+                                <h5 class="card-title">Typography Design Practice</h5>
+                                <p class="card-text">A typography practice using Adobe Illustrator</p>
+                            </div>
+                            <div class="card-footer">
+                                <p class="card-text"><a href="#" class="btn-link">Show Example ></a></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                        <div class="card shadow-sm h-100">
+                            <img src="./img/Yang_Bing_mad9010_310_assignment-01.png" class="card-img-top img-thumbnail img-fluid" alt="mixins png">
+                            <div class="card-body">
+                                <h5 class="card-title">Avatar icon for Apple</h5>
+                                <p class="card-text">Designing an animal avatar with the skills in Adobe Illustrator  </p>
+                            </div>
+                            <div class="card-footer">
+                                <p class="card-text"><a href="#">Show Example ></a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <!-- cards list end -->
+            </div>
+            <!-- Graphics tab end -->
+          </div> 
       </div>
-      <!-- education section end -->
-
+      <!-- portfolio section end-->
 
       </div>    
     </main>
