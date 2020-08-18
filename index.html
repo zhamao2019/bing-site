@@ -195,22 +195,35 @@
       <div class="portfolio container mt-5">
         <h2 class="display-5">MY PORTFOLIO</h2>
 
+        <!-- important project section -->
+        <div class="card mb-5 shadow-sm">
+          <a href="https://zhamao2019.github.io/Angular-ToDoList-Practice/"><img src="./img/angular-todo.png" class="card-img-top" alt="..."></a>
+          <div class="card-body">
+            <h5 class="card-title">Angular Todo List</h5>
+            <p class="card-text">A todo list program using Angular, try to finish all your plans on the list!</p>
+          </div>
+          <div class="card-footer">
+            <p class="card-text"><a href="https://zhamao2019.github.io/Angular-ToDoList-Practice/">Show Example ></a></p>
+          </div>
+        </div>
+        <!-- important project section end -->
+
         <!-- tab bar start -->
         <ul class="nav nav-tabs mb-3" id="myTab" role="tablist">
             <li class="nav-item">
-              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#Programs" role="tab" aria-controls="Programs" aria-selected="true">Programs</a>
+              <a class="nav-link active" id="python-tab" data-toggle="tab" href="#Python" role="tab" aria-controls="Python" aria-selected="true">Python</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#Interaction" role="tab" aria-controls="Interaction" aria-selected="false">Interaction</a>
+              <a class="nav-link" id="interaction-tab" data-toggle="tab" href="#Interaction" role="tab" aria-controls="Interaction" aria-selected="false">Interaction and Prototype</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="contact-tab" data-toggle="tab" href="#Graphics" role="tab" aria-controls="Graphics" aria-selected="false">Graphics</a>
+              <a class="nav-link" id="graphic-tab" data-toggle="tab" href="#Graphics" role="tab" aria-controls="Graphics" aria-selected="false">Graphics</a>
             </li>
           </ul>
           <div class="tab-content" id="myTabContent">
-            <!-- programs tab start -->
-            <div class="tab-pane fade show active" id="Programs" role="tabpanel" aria-labelledby="Programs-tab">
-                <!-- programs cards list -->
+            <!-- python tab start -->
+            <div class="tab-pane fade show active" id="Python" role="tabpanel" aria-labelledby="Programs-tab">
+                <!-- python cards list -->
                 <div class="row">
                     
                     <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
@@ -241,8 +254,8 @@
                         <div class="card shadow-sm h-100">
                             <img src="./img/py2.png" class="card-img-top img-thumbnail img-fluid" alt="convert files png">
                             <div class="card-body">
-                                <h5 class="card-title">Convert Files</h5>
-                                <p class="card-text">A practice using python convert .txt to .csv files</p>
+                                <h5 class="card-title">Convert(.txt to .csv)</h5>
+                                <p class="card-text">Using python convert files from .txt to .csv</p>
                             </div>
                             <div class="card-footer">
                                 <p class="card-text"><a href="https://github.com/zhamao2019/PythonLab9">Show Example ></a></p>
@@ -253,8 +266,8 @@
                         <div class="card shadow-sm h-100">
                             <img src="./img/py.png" class="card-img-top img-thumbnail img-fluid" alt="bouncing ball">
                             <div class="card-body">
-                                <h5 class="card-title">Dictionary Practice</h5>
-                                <p class="card-text">Using python to generate hexadecimal encode to binary dictionary, and display the characters </p>
+                                <h5 class="card-title">Convert(hexadecimal to binary)</h5>
+                                <p class="card-text">Using python to generate hexadecimal encode to binary dictionary, and display the characters on raspberry pi</p>
                             </div>
                             <div class="card-footer">
                                 <p class="card-text"><a href="https://github.com/zhamao2019/PythonLab9" class="btn-link">Show Example ></a></p>
@@ -265,7 +278,7 @@
                         <div class="card shadow-sm h-100">
                             <img src="./img/py3.png" class="card-img-top img-thumbnail img-fluid" alt="convert files png">
                             <div class="card-body">
-                                <h5 class="card-title">Flask Practice</h5>
+                                <h5 class="card-title">Flask (Student Data)</h5>
                                 <p class="card-text">Using flask framework and accessing with database to display students datas </p> 
                             </div>
                             <div class="card-footer">
@@ -274,9 +287,9 @@
                         </div>
                     </div>
                 </div>
-                <!-- cards list end  -->
+                <!-- python cards list end  -->
             </div>
-            <!-- programs tab end -->
+            <!-- python tab end -->
 
             <!-- Interaction tab start -->
             <div class="tab-pane fade" id="Interaction" role="tabpanel" aria-labelledby="Interaction-tab">
@@ -308,30 +321,6 @@
                         </div>
                     </div>
    
-                    <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
-                        <div class="card shadow-sm h-100">
-                            <img src="./img/py2.png" class="card-img-top img-thumbnail img-fluid" alt="convert files png">
-                            <div class="card-body">
-                                <h5 class="card-title">Convert Files</h5>
-                                <p class="card-text">A practice using python convert .txt to .csv files</p>
-                            </div>
-                            <div class="card-footer">
-                                <p class="card-text"><a href="https://github.com/zhamao2019/PythonLab9">Show Example ></a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
-                        <div class="card shadow-sm h-100">
-                            <img src="./img/py.png" class="card-img-top img-thumbnail img-fluid" alt="bouncing ball">
-                            <div class="card-body">
-                                <h5 class="card-title">Dictionary Practice</h5>
-                                <p class="card-text">Using python to generate hexadecimal encode to binary dictionary, and display the characters </p>
-                            </div>
-                            <div class="card-footer">
-                                <p class="card-text"><a href="https://github.com/zhamao2019/PythonLab9" class="btn-link">Show Example ></a></p>
-                            </div>
-                        </div>
-                    </div>
                 </div> 
                 <!-- cards list end -->
             </div>
@@ -345,11 +334,8 @@
                         <div class="card shadow-sm h-100">
                             <img src="./img/Yang_Bing_mad9010_310_typography-01.png" class="card-img-top img-thumbnail img-fluid" alt="transition png">
                             <div class="card-body">
-                                <h5 class="card-title">Typography Design Practice</h5>
-                                <p class="card-text">A typography practice using Adobe Illustrator</p>
-                            </div>
-                            <div class="card-footer">
-                                <p class="card-text"><a href="#" class="btn-link">Show Example ></a></p>
+                                <h5 class="card-title">Illustrator Typography Design</h5>
+                                <p class="card-text">A Tiktok style typography using Adobe Illustrator</p>
                             </div>
                         </div>
                     </div>
@@ -358,11 +344,8 @@
                         <div class="card shadow-sm h-100">
                             <img src="./img/Yang_Bing_mad9010_310_assignment-01.png" class="card-img-top img-thumbnail img-fluid" alt="mixins png">
                             <div class="card-body">
-                                <h5 class="card-title">Avatar icon for Apple</h5>
-                                <p class="card-text">Designing an animal avatar with the skills in Adobe Illustrator  </p>
-                            </div>
-                            <div class="card-footer">
-                                <p class="card-text"><a href="#">Show Example ></a></p>
+                                <h5 class="card-title">Illustrator avatar icon for Apple</h5>
+                                <p class="card-text">Designing an animal avatar with the skills of Adobe Illustrator  </p>
                             </div>
                         </div>
                     </div>

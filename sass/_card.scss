@@ -1,20 +1,3 @@
-// i{
-//     &.fab{
-//         color: $yellow-active;
-//         font-size: 3rem;
-//         text-align: center;
-//         padding: 10px;
-//         // background-color: $bg-dark;
-//     }
-//     &.fas{
-//         color: $yellow-active;
-//         font-size: 3rem;
-//         text-align: center;
-//         padding: 10px;
-//         // background-color: $bg-dark;
-//     }
-// }
-
 
 div.card{
     @include cardFocus();
@@ -31,6 +14,9 @@ div.card{
     p.card-text{
         color: $bg-second;
         text-align: center;
+        a{
+            text-decoration: none;
+        }
     }
 
 
