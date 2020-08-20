@@ -30,8 +30,11 @@ ul.timeline > li:before {
     z-index: 400;
 }
 ul.bullet {
+    margin-left: 0rem;
+    padding-left: 2rem;
     li {
         list-style-type: disc;
         color: $bg-dark;
+        margin-bottom: 1rem;
     }
 }
