@@ -16,6 +16,9 @@ ul.timeline:before {
 ul.timeline > li {
     margin: 1rem 0 2rem;
     padding-left: 20px;
+    p.media-title{
+        margin-bottom: 1.5rem;
+    }
 }
 ul.timeline > li:before {
     content: ' ';
@@ -34,7 +37,8 @@ ul.bullet {
     padding-left: 2rem;
     li {
         list-style-type: disc;
-        color: $bg-dark;
+        color: $text-dark;
         margin-bottom: 1rem;
     }
+
 }

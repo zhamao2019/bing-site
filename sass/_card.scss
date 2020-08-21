@@ -2,29 +2,44 @@
 div.card{
     @include cardFocus();
     margin-bottom: 2rem;
-    h5.card-title{
-        // font-size: 1.25rem;
-        // font-weight: 900;
+    .card-title{
+        font-size: 1.25rem;
         text-align: center;
-        &:hover{
-            color: $yellow-active;
+    }
+    .card-body{
+        background-color: $bg-light;
+        p.card-text{
+            color: $text-muted;
         }
     }
-
     p.card-text{
-        color: $bg-second;
         text-align: center;
         a{
             text-decoration: none;
         }
     }
-
-div.nav-tabs>li.nav-item{
-    a.nav-link{
-        color: $yellow-active;
+    .card-footer{
+        border: 0rem;
+        background-color: $bg-light;
+        &:hover{
+            background-color: $bg-dark;
+        }
+        p.card-text>a{
+            color: $yellow-active;
+        }
     }
 
 }
 
-}
+ul.nav.nav-tabs>li.nav-item{
+    a.nav-link{
+        color: $text-dark;
+        &:hover{
+            color: $yellow-active;
+        }
+    }
+    a.nav-link.active{
+        color: $yellow-active;
+    }
 
+}
