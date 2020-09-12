@@ -1,0 +1,1 @@
+  2020-05-02 7:19:38 PM EDT: Starting composition “cat_14”.  Output To: /Users/yangbing/Documents/code/emoji/cat/cat_14/cat_14.mov    2020-05-02 7:19:39 PM EDT: Finished composition “cat_14”.  Total Time Elapsed: 1 SecondsLog closed on 2020-05-02 at 7:19:39 PM EDT

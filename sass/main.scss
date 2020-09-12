@@ -9,6 +9,11 @@
 @import "./mediaList";
 @import "./timeline";
 
+.playgif{
+    width: 100px;
+    height: 100px;
+}
+
 h1,h2,h3,h4,h5{
     font-family: $headerFont;
 }
