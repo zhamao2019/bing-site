@@ -98,7 +98,7 @@
             <!-- Angular section end-->
             <!-- Design section -->
             <li class="media col-md-5 mb-3 pl-0">
-              <i class="fab fa-adobe"></i>
+              <i class="fas fa-palette"></i>
               <div class="media-body">
                 <p class="media-title">Graphic & Prototype Design</p>
                 <div class="progress">
@@ -140,8 +140,10 @@
       <div class="container-fluid bg-light pt-5 pb-5">
         <div class="education container">
           <h2 id="education" class="display-5">EDUCATION</h2>
+          
+          <!-- education list react component -->
+          <div id="react_example"></div>
 
-          <!-- <div class="row"></div> -->
           <div class="school mb-5">
             <div class="row"> 
               <p class="media-title col-lg-10">Algonquin College</p>
@@ -157,7 +159,6 @@
             </div> 
             <p>Industrial Engineering</p>
           </div>
-        </div>
       </div>
       <!-- education section end -->
 
@@ -338,11 +339,12 @@
 
         <!-- tab bar start -->
         <ul class="nav nav-tabs mb-3" id="myTab" role="tablist">
+            
             <li class="nav-item">
-              <a class="nav-link active" id="interaction-tab" data-toggle="tab" href="#interaction" role="tab" aria-controls="interaction" aria-selected="true">Interaction and Prototype</a>
-            </li>
+              <a class="nav-link active" id="c-tab" data-toggle="tab" href="#c" role="tab" aria-controls="c" aria-selected="true">C#</a>
+            </li> 
             <li class="nav-item">
-              <a class="nav-link" id="c-tab" data-toggle="tab" href="#c" role="tab" aria-controls="c" aria-selected="false">C#</a>
+              <a class="nav-link" id="php-tab" data-toggle="tab" href="#php" role="tab" aria-controls="php" aria-selected="false">PHP</a>
             </li> 
             <li class="nav-item">
               <a class="nav-link" id="python-tab" data-toggle="tab" href="#python" role="tab" aria-controls="python" aria-selected="false">Python</a>
@@ -356,63 +358,19 @@
           </ul>
           
           <div class="tab-content" id="myTabContent">
-            <!-- Interaction tab start -->
-            <div class="tab-pane fade show active" id="interaction" role="tabpanel" aria-labelledby="interaction-tab">
-                <!-- Interaction cards list -->
-                <div class="row">
-                  <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
-                    <div class="card shadow-sm h-100">
-                        <img src="./img/prototype.png" class="card-img-top img-thumbnail img-fluid" alt="prototype design png">
-                        <div class="card-body">
-                            <p class="card-title">Prototype Portfolio</p>
-                            <p class="card-text">Prototype Design as worked in China</p>
-                        </div>
-                        <div class="card-footer">
-                            <p class="card-text"><a href="https://algonquinlivecom-my.sharepoint.com/:f:/g/personal/yang0287_algonquinlive_com/Eknov1Z2AXhJh4oiyuhbIJkBbhpEFKgKGSBv_YkJUySCbQ?e=4qY747" class="btn-link">View on OneDrive</a></p>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-6 col-md-4 col-lg-3  mb-3">
-                      <div class="card shadow-sm h-100">
-                          <img src="./img/transition.png" class="card-img-top img-thumbnail img-fluid" alt="transition png">
-                          <div class="card-body">
-                              <p class="card-title">Transition Practice</p>
-                              <p class="card-text">A practice that using transitions with Sass in css</p>
-                          </div>
-                          <div class="card-footer">
-                              <p class="card-text"><a href="https://zhamao2019.github.io/transitions/transitions.html" class="btn-link">View on GitHub</a></p>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
-                      <div class="card shadow-sm h-100">
-                          <img src="./img/mixins.png" class="card-img-top img-thumbnail img-fluid" alt="mixins png">
-                          <div class="card-body">
-                              <p class="card-title">Mixin Practice</p>
-                              <p class="card-text">A practice that using mixins to show a better experience of forms with Sass in CSS</p>
-                          </div>
-                          <div class="card-footer">
-                              <p class="card-text"><a href="https://zhamao2019.github.io/mixin/index.html">View on GitHub</a></p>
-                          </div>
-                      </div>
-                  </div>
-                </div> 
-                <!-- cards list end -->
-            </div>
-            <!-- Interaction tab end -->
             <!-- C# tab start -->
-            <div class="tab-pane fade" id="c" role="tabpanel" aria-labelledby="c-tab">
+            <div class="tab-pane fade show active" id="c" role="tabpanel" aria-labelledby="c-tab">
               <!-- C# cards list -->
               <div class="row">
                 <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
                   <div class="card shadow-sm h-100">
                       <img src="./img/c-1.png" class="card-img-top img-thumbnail img-fluid" alt="C# student course selection system png">
                       <div class="card-body">
-                          <p class="card-title">Student Course Selection System</p>
-                          <p class="card-text">A simple Course Selection System model using C# and ASP.NET</p>
+                          <p class="card-title">Student Courses Records System</p>
+                          <p class="card-text">A web application allow user to add courses and student records by using Visual Studio SQL Server Object Explorer to manage SQL Server databases</p>
                       </div>
                       <div class="card-footer">
-                          <p class="card-text"><a href="https://github.com/zhamao2019/C-Lab8" class="btn-link">View on GitHub</a></p>
+                          <p class="card-text"><a href="https://github.com/zhamao2019/C-_StudentCoursesRecordsSystem" class="btn-link">View on GitHub</a></p>
                       </div>
                   </div>
                 </div>
@@ -444,10 +402,53 @@
               <!-- cards list end -->
             </div>
             <!-- C# tab end -->
+            <!-- PHP tab start -->
+            <div class="tab-pane fade" id="php" role="tabpanel" aria-labelledby="php-tab">
+              <!-- php cards list -->
+              <div class="row">
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                  <div class="card shadow-sm h-100">
+                      <img src="./img/php-1.png" class="card-img-top img-thumbnail img-fluid" alt="php Customer Deposit Calculator">
+                      <div class="card-body">
+                          <p class="card-title">Customer Deposit Calculator</p>
+                          <p class="card-text">An application helps a customer calculating the interest by deposit information that user input</p> 
+                      </div>
+                      <div class="card-footer">
+                          <p class="card-text"><a href="https://github.com/zhamao2019/PHP-CustomerDepositCalculator">View on GitHub</a></p>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                    <div class="card shadow-sm h-100">
+                        <img src="./img/php-2.png" class="card-img-top img-thumbnail img-fluid" alt="php shopping cart">
+                        <div class="card-body">
+                            <p class="card-title">Book Shopping Cart</p>
+                            <p class="card-text">A Book Shopping Cart application using PHP, NetBeans and Ampps</p>
+                        </div>
+                        <div class="card-footer">
+                            <p class="card-text"><a href="https://github.com/zhamao2019/PHP-BookShoppingCart" class="btn-link">View on GitHub</a></p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>  
+            <!-- PHP tab end-->
             <!-- python tab start -->
             <div class="tab-pane fade" id="python" role="tabpanel" aria-labelledby="python-tab">
               <!-- python cards list -->
               <div class="row">
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                  <div class="card shadow-sm h-100">
+                      <img src="./img/py3.png" class="card-img-top img-thumbnail img-fluid" alt="convert files png">
+                      <div class="card-body">
+                          <p class="card-title">Student Countries Map</p>
+                          <p class="card-text">Using flask framework and accessing with database to display students datas </p> 
+                      </div>
+                      <div class="card-footer">
+                          <p class="card-text"><a href="https://github.com/zhamao2019/pythonLab11">View on GitHub</a></p>
+                      </div>
+                  </div>
+                </div>
                 <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
                     <div class="card shadow-sm h-100">
                         <img src="./img/py-pi2.png" class="card-img-top img-thumbnail img-fluid" alt="bouncing ball">
@@ -496,18 +497,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
-                    <div class="card shadow-sm h-100">
-                        <img src="./img/py3.png" class="card-img-top img-thumbnail img-fluid" alt="convert files png">
-                        <div class="card-body">
-                            <p class="card-title">Flask (Student Data)</p>
-                            <p class="card-text">Using flask framework and accessing with database to display students datas </p> 
-                        </div>
-                        <div class="card-footer">
-                            <p class="card-text"><a href="https://github.com/zhamao2019/pythonLab11">View on GitHub</a></p>
-                        </div>
-                    </div>
-                </div>
+                
               </div>
               <!-- python cards list end  -->
             </div>
@@ -516,6 +506,18 @@
             <div class="tab-pane fade" id="graphics" role="tabpanel" aria-labelledby="graphics-tab">
                <!-- Graphics cards list start -->
                 <div class="row">
+                    <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                      <div class="card shadow-sm h-100">
+                          <img src="./img/prototype.png" class="card-img-top img-thumbnail img-fluid" alt="prototype design png">
+                          <div class="card-body">
+                              <p class="card-title">Prototype Portfolio</p>
+                              <p class="card-text">Prototype Design as worked in China</p>
+                          </div>
+                          <div class="card-footer">
+                              <p class="card-text"><a href="https://algonquinlivecom-my.sharepoint.com/:f:/g/personal/yang0287_algonquinlive_com/Eknov1Z2AXhJh4oiyuhbIJkBbhpEFKgKGSBv_YkJUySCbQ?e=4qY747" class="btn-link">View on OneDrive</a></p>
+                          </div>
+                      </div>
+                    </div>
                     <div class="col-sm-6 col-md-4 col-lg-3  mb-3">
                         <div class="card shadow-sm h-100">
                             <img src="./img/Yang_Bing_mad9010_310_typography-01.png" class="card-img-top img-thumbnail img-fluid" alt="transition png">
@@ -563,30 +565,29 @@
           </div> 
       </div>
       <!-- portfolio section end-->
+    </main>
 
-      <!-- contact section -->
-      <div class="container-fluid bg-dark pt-5 pb-5 mt-3">
-        <div class="contact container">
-          <h2 id="contact" class="display-5 mt-3 text-light">CONTACT</h2>
-          <h3 class="text-light">Bing Yang</h3>
+    <!-- contact section -->
+    <div class="container-fluid bg-dark pt-5 pb-5 mt-3">
+      <div class="contact container">
+        <h2 id="contact" class="display-5 mt-3 text-light">CONTACT</h2>
+        <h3 class="text-light">Bing Yang</h3>
 
-          <div class="info mt-3 pb-3">
-            <div class="d-flex align-items-center mb-2">
-              <i class="fas fa-phone" style="font-size: 20px; color: #f8f9fa;"></i>
-              <p class="contact-text ml-3 text-light">(873)-288-0105</p>
-            </div>
-  
-            <div class="d-flex align-items-center">
-              <i class="fas fa-envelope" style="font-size: 20px; color: #f8f9fa;"></i>
-              <p class="contact-text text-light ml-3">yang0287@algonquinlive.com</p>
-            </div>
+        <div class="info mt-3 pb-3">
+          <div class="d-flex align-items-center mb-2">
+            <i class="fas fa-phone" style="font-size: 20px; color: #f8f9fa;"></i>
+            <p class="contact-text ml-3 text-light">(873)-288-0105</p>
+          </div>
+
+          <div class="d-flex align-items-center">
+            <i class="fas fa-envelope" style="font-size: 20px; color: #f8f9fa;"></i>
+            <p class="contact-text text-light ml-3">yang0287@algonquinlive.com</p>
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- contact section end -->
-
-    </main>
+    <!-- contact section end -->
 
     <!-- footer area -->
     <footer class="container-fluid bg-dark mt-0">
@@ -599,5 +600,11 @@
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+<!-- Load our React component. -->
+<script src="./js/react_example.js"></script>
 </body>
 </html>
